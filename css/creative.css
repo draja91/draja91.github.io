@@ -327,7 +327,17 @@ header .header-content .header-content-inner p {
     margin-bottom: 0;
 }
 
+#contact a {
+    color: black;
+}
 
+#contact {
+    color: black;
+}
+
+#contact .left {
+    text-align: right;
+}
 
 #projects {
     padding-left: 20px;
