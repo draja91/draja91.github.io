@@ -46,18 +46,17 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIGUQW7sjpOzRg79BVVv2Ou67poqgi8g0"  
-            async defer></script>
+     <script src="http://maps.googleapis.com/maps/api/js"></script>
             <script>
-                function initialize() {
-                 var mapProp = {
-                center:new google.maps.LatLng(51.508742,-0.120850),
-                zoom:5,
-                mapTypeId:google.maps.MapTypeId.ROADMAP
-                 };
-                var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-                }
-                google.maps.event.addDomListener(window, 'load', initialize);
+            function initialize() {
+            var mapProp = {
+            center:new google.maps.LatLng(42.341516,-71.09830699999998),
+            zoom:13,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
             </script>
 
 </head>
@@ -365,11 +364,14 @@
                 <br><br>
             </div>
             <div class="row">
-                <div id="googleMap" style="width:500px;height:380px;"></div>
+                <div class="col-md-offset-3 col-md-6">
+                    <div id="googleMap" style="width:500px;height:380px;"></div>
+                </div>
 
             </div>
             
-           
+            <br><br>
+            
             <div class="row">
                 <div class="col-lg-6 left">
                     <a href="https://www.facebook.com/dharini.raja"> Facebook - Dharini Raja</a>
