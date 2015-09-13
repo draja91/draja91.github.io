@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1.0">
     <meta name="author" content="">
 
     <title>Dharini Raja -  Resume</title>
@@ -44,6 +45,20 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIGUQW7sjpOzRg79BVVv2Ou67poqgi8g0"  
+            async defer></script>
+            <script>
+                function initialize() {
+                 var mapProp = {
+                center:new google.maps.LatLng(51.508742,-0.120850),
+                zoom:5,
+                mapTypeId:google.maps.MapTypeId.ROADMAP
+                 };
+                var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                }
+                google.maps.event.addDomListener(window, 'load', initialize);
+            </script>
 
 </head>
 
@@ -350,6 +365,12 @@
                 <br><br>
             </div>
             <div class="row">
+                <div id="googleMap" style="width:500px;height:380px;"></div>
+
+            </div>
+            
+           
+            <div class="row">
                 <div class="col-lg-6 left">
                     <a href="https://www.facebook.com/dharini.raja"> Facebook - Dharini Raja</a>
                     
@@ -362,7 +383,7 @@
             <br><br>
             <div class="row">
                 <div class="col-lg-6 left">
-                   <a href="mailto:raja.d@husky.neu.edu"> Mail me @ raja.d@husky.neu.edu</a>
+                   <a href="mailto:raja.d@husky.neu.edu"> Mail - raja.d@husky.neu.edu</a>
                 
                </div>
                <div class="col-lg-6">

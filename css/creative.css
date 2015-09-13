@@ -362,6 +362,10 @@ header .header-content .header-content-inner p {
     padding-left: 20px;
 }
 
+#map {
+        height: 100%;
+      }
+
 h2 {
     font-size: 40px;
     text-align: center;
